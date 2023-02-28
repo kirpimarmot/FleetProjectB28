@@ -36,6 +36,14 @@ public abstract class  BasePage {
     @FindBy(linkText = "My User")
     public WebElement myUser;
 
+    @FindBy(xpath = "//i[@title='Get help']")
+    public WebElement questionIcon;
+
+    @FindBy(xpath = "//a[normalize-space()='Learn how to use this space']")
+    public WebElement learnHowToUseThisSpaceLink;
+
+
+
     public BasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }

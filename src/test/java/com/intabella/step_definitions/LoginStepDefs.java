@@ -17,14 +17,7 @@ public class LoginStepDefs {
     public void the_user_is_on_the_login_page() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
-    @When("the user enters the store manager information")
-    public void the_user_enters_the_store_manager_information() {
-        String username = ConfigurationReader.getProperty("store_manager_username");
-        String password = ConfigurationReader.getProperty("store_manager_password");
 
-        LoginPage loginPage = new LoginPage();
-        loginPage.login(username,password);
-    }
     @Then("the user should be able to login")
     public void the_user_should_be_able_to_login() {
         BrowserUtils.sleep(3);
@@ -33,26 +26,6 @@ public class LoginStepDefs {
     }
 
 
-    @When("the user enters the driver information")
-    public void the_user_enters_the_driver_information() throws InterruptedException {
-        String username = ConfigurationReader.getProperty("driver_username");
-        String password = ConfigurationReader.getProperty("driver_password");
-
-        LoginPage loginPage = new LoginPage();
-        loginPage.login(username,password);
-    }
-
-
-
-    @When("the user enters the sales manager information")
-    public void the_user_enters_the_sales_manager_information() throws InterruptedException {
-        String username = ConfigurationReader.getProperty("sales_manager_username");
-        String password = ConfigurationReader.getProperty("sales_manager_password");
-
-        LoginPage loginPage = new LoginPage();
-        loginPage.login(username,password);
-
-    }
 
 
     @When("the user logs in using {string} and {string}")
