@@ -4,6 +4,7 @@ package com.intabella.step_definitions;
 import com.intabella.pages.DashboardPage;
 import com.intabella.pages.HowToUserPinbarPage;
 import com.intabella.pages.OroincDocPage;
+import com.intabella.pages.VehicleModelPage;
 import com.intabella.utilities.BrowserUtils;
 import com.intabella.utilities.Driver;
 import io.cucumber.java.en.And;
@@ -94,4 +95,6 @@ public class ContactsStepDefs {
         Assert.assertEquals(expectedMessage, dashboardPage.errorMessage.getText());
 
     }
+
+
 }
