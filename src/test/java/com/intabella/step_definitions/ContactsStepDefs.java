@@ -42,7 +42,13 @@ public class ContactsStepDefs {
     @Then("the user should see {string}")
     public void theUserShouldSee(String expectedTitle) {
         BrowserUtils.switchToWindow(expectedTitle);
-        BrowserUtils.verifyTitle(expectedTitle);
+//        for (String handle : Driver.getDriver().getWindowHandles()) {
+//            Driver.getDriver().switchTo().window(handle);
+//            if (Driver.getDriver().getTitle().equals(expectedTitle)) {
+//                break;
+//            }
+//        }
+        Assert.assertEquals(expectedTitle, new OroincDocPage().OroincTitle.getText());
     }
     @And("the user click on the {string} link")
     public void theUserClickOnTheLink(String str) {

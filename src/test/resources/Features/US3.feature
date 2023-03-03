@@ -4,7 +4,7 @@ Feature: Pinbar
     Given the user is on the login page
 
 
-  Scenario: Verify user can use how to use the pinbar
+  Scenario: US3AC1TC1 Verify user can use how to use the pinbar
     Given the user logged in as "sales manager"
     And the user click on the "Learn how to use this space" link
     Then the user should see following text
