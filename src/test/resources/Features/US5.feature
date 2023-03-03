@@ -20,7 +20,7 @@ Feature: Vehicle Model Page
       | VENDORS                  |
 
 
-  Scenario:US5AC1TC2 Verify driver can not access Vehicle Contract Page
+  Scenario:US5AC1TC2 Verify driver can not access Vehicle Model Page
     Given the user logged in as "driver"
     When the user navigates to "Fleet" - "Vehicles Model"
     Then the user should see "You do not have permission to perform this action." message
