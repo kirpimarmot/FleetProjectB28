@@ -75,4 +75,23 @@ public class ContactsStepDefs {
         Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//img")).isDisplayed());
         //img[src='/bundles/oronavigation/images/pinbar-location.jpg']
     }
+
+    @And("the user navigates to {string} - {string}")
+    public void theUserNavigatesToModule(String tab, String module) {
+        BrowserUtils.waitFor(8);
+        dashboardPage.navigateToModule(tab, module);
+        BrowserUtils.waitFor(10);
+    }
+
+    @Then("the page url is {string}")
+    public void thePageUrlIs(String expectedUrl) {
+        Assert.assertEquals(expectedUrl, Driver.getDriver().getCurrentUrl());
+    }
+
+    @Then("the user should see {string} message")
+    public void theUserShouldSeeMessage(String expectedMessage) {
+        System.out.println(dashboardPage.errorMessage.getText());
+        Assert.assertEquals(expectedMessage, dashboardPage.errorMessage.getText());
+
+    }
 }
