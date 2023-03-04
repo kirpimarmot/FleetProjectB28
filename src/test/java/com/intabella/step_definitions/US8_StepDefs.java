@@ -4,6 +4,7 @@ import com.intabella.pages.CalendarEventsPage;
 import com.intabella.utilities.BrowserUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 public class US8_StepDefs {
@@ -20,10 +21,29 @@ public class US8_StepDefs {
 
     @Then("the repeat number is {string}")
     public void theRepeatNumberIs(String expectedRepeatNumber) {
-        BrowserUtils.waitFor(5);
-        calendarEventsPage.repeatCheckBox.click();
+
         Assert.assertEquals(expectedRepeatNumber, calendarEventsPage.repeatEveryInputBox.getAttribute("value"));
 
+
+    }
+
+    @And("the user click on repeat check box")
+    public void theUserClickOnRepeatCheckBox() {
+        BrowserUtils.waitFor(5);
+        calendarEventsPage.repeatCheckBox.click();
+    }
+
+    @When("the calendar event repaet field is cleared")
+    public void theCalendarEventRepaetFieldIsCleared() {
+        calendarEventsPage.repeatEveryInputBox.clear();
+
+    }
+
+    @Then("the user should see {string} warning")
+    public void theUserShouldSeeWarning(String expectedWarningMessage) {
+
+        String actualWarning = calendarEventsPage.warningMessage.getText();
+        Assert.assertEquals(expectedWarningMessage, actualWarning);
 
     }
 }
