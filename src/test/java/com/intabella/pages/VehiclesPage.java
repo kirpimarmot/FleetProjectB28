@@ -21,6 +21,13 @@ public class VehiclesPage extends BasePage{
     @FindBy(xpath = "//button[@class='btn btn-default btn-small dropdown-toggle']//input[@type='checkbox']")
     public WebElement selectAllCheckBoxes;
 
+    @FindBy(css = "div.btn-group button.btn.dropdown-toggle")
+    public WebElement viewPerPage;
+
+    @FindBy(xpath = "//input[@value='1']")
+    public WebElement pageNumber;
+
+
 
 
 
@@ -38,5 +45,10 @@ public class VehiclesPage extends BasePage{
 //        }
 
 
+    }
+
+    public String getValueViewPerPage(){
+        BrowserUtils.waitForVisibility(viewPerPage,5);
+        return viewPerPage.getText();
     }
 }
