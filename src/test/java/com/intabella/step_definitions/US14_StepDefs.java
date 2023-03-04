@@ -47,8 +47,8 @@ public class US14_StepDefs {
             Assert.assertFalse(filterCheckBoxes.isSelected());
         }
 
-
     }
+
 
 
 }

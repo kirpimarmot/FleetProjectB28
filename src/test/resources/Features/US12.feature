@@ -4,7 +4,7 @@ Feature: Customers Account Page
     Given the user is on the login page
 
 
-  Scenario: US14AC1TC1 Verify all check boxes in the Vehicles page is uncheck by defult
+  Scenario: US12AC1TC1 Verify filter names of the Customer Account Page
     Given the user logged in as "sales manager"
     When the user navigates to "Customers" - "Accounts"
     And the user clicks on filter button
