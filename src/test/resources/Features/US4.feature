@@ -11,8 +11,8 @@ Feature: Vehicle Contract Page
     Then the page url is "<url>"
 
     Examples:
-      | userType      | tab   | module             | title                                                                | url                                                          |
-      | sales manager | Fleet | Vehicle Contracts  | All - Vehicle Contract - Entities - System - Car - Entities - System | https://qa1.vytrack.com/entity/Extend_Entity_VehicleContract |
+      | userType      | tab   | module            | title                                                                | url                                                          |
+      | sales manager | Fleet | Vehicle Contracts | All - Vehicle Contract - Entities - System - Car - Entities - System | https://qa1.vytrack.com/entity/Extend_Entity_VehicleContract |
       | store manager | Fleet | Vehicle Contracts | All - Vehicle Contract - Entities - System - Car - Entities - System | https://qa1.vytrack.com/entity/Extend_Entity_VehicleContract |
 
 
