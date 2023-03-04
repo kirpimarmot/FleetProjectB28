@@ -13,7 +13,7 @@ Feature: Select Vehicle from Vehicles Page
   Scenario: US7AC1TC2 Verify user can select all cars by clicking on the first check box
     Given the user logged in as "sales manager"
     And the user navigates to "Fleet" - "Vehicles"
-    Then the the user select all cars by click on the first check box
+    Then the the user select all records by click on the first check box
 
 
   Scenario: US7AC1TC3 Verify user can select all cars by clicking on the first check box

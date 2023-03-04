@@ -29,8 +29,8 @@ public class US7_StepDefs {
 
     }
 
-    @Then("the the user select all cars by click on the first check box")
-    public void theTheUserSelectAllCarsByClickOnTheFirstCheckBox() {
+    @Then("the the user select all records by click on the first check box")
+    public void theTheUserSelectAllRecordssByClickOnTheFirstCheckBox() {
         vehiclesPage.selectAllCheckBoxes.click();
 
         List<WebElement> numRows = Driver.getDriver().findElements(By.xpath("//table/tbody/tr"));
