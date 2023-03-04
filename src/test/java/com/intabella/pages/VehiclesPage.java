@@ -18,6 +18,12 @@ public class VehiclesPage extends BasePage{
     public List<WebElement> iconList;
 
 
+    @FindBy(xpath = "//button[@class='btn btn-default btn-small dropdown-toggle']//input[@type='checkbox']")
+    public WebElement selectAllCheckBoxes;
+
+
+
+
     public void hoverOverThreeDots(){
         Actions actions = new Actions(Driver.getDriver());
         //web element receives the mouse event in second attempt
