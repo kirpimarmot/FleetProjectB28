@@ -10,4 +10,6 @@ public class Filters extends BasePage {
 
     @FindBy(className = "add-filter-button")
     public WebElement manageFiltersButton;
+
+
 }
