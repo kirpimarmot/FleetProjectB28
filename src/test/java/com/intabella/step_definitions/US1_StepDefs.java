@@ -12,7 +12,7 @@ public class US1_StepDefs {
 
     @Then("the user should see following options")
     public void the_user_should_see_following_options(List<String> menuOptions) {
-        BrowserUtils.waitFor(2);
+        new DashboardPage().waitUntilLoaderScreenDisappear();
         //get the list of webelement and convert them to list of string and assert
         List<String> actualOptions = BrowserUtils.getElementsText(new DashboardPage().menuOptions);
 

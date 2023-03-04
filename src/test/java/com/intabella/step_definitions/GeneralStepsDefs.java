@@ -15,9 +15,9 @@ public class GeneralStepsDefs {
 
     @And("the user navigates to {string} - {string}")
     public void theUserNavigatesToModule(String tab, String module) {
-        BrowserUtils.waitFor(8);
+        dashboardPage.waitUntilLoaderScreenDisappear();
         dashboardPage.navigateToModule(tab, module);
-        BrowserUtils.waitFor(10);
+        dashboardPage.waitUntilLoaderScreenDisappear();
     }
 
     @Then("the page url is {string}")

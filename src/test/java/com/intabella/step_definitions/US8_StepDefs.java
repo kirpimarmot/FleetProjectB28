@@ -1,7 +1,6 @@
 package com.intabella.step_definitions;
 
 import com.intabella.pages.CalendarEventsPage;
-import com.intabella.utilities.BrowserUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -13,8 +12,7 @@ public class US8_StepDefs {
 
     @And("the user click on Create Calendar Event button")
     public void theUserClickOnCreateCalendarEventButton() {
-        BrowserUtils.waitFor(5);
-
+        calendarEventsPage.waitUntilLoaderScreenDisappear();
         calendarEventsPage.createCalendarEventButton.click();
 
     }
@@ -29,7 +27,7 @@ public class US8_StepDefs {
 
     @And("the user click on repeat check box")
     public void theUserClickOnRepeatCheckBox() {
-        BrowserUtils.waitFor(5);
+        calendarEventsPage.waitUntilLoaderScreenDisappear();
         calendarEventsPage.repeatCheckBox.click();
     }
 

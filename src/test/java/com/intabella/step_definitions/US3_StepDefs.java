@@ -18,6 +18,7 @@ public class US3_StepDefs {
 
     @And("the user click on the {string} link")
     public void theUserClickOnTheLink(String str) {
+        dashboardPage.waitUntilLoaderScreenDisappear();
         dashboardPage.learnHowToUseThisSpaceLink.click();
     }
 
