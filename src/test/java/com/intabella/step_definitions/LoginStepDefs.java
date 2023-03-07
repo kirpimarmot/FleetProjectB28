@@ -5,6 +5,7 @@ import com.intabella.pages.LoginPage;
 import com.intabella.utilities.BrowserUtils;
 import com.intabella.utilities.ConfigurationReader;
 import com.intabella.utilities.Driver;
+import com.intabella.utilities.UserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -12,6 +13,7 @@ import org.junit.Assert;
 
 public class LoginStepDefs {
 
+    LoginPage loginPage = new LoginPage();
 
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() {
@@ -30,7 +32,6 @@ public class LoginStepDefs {
 
     @When("the user logs in using {string} and {string}")
     public void the_user_logs_in_using_and(String username, String password) {
-        LoginPage loginPage = new LoginPage();
         loginPage.login(username,password);
     }
 
@@ -45,22 +46,9 @@ public class LoginStepDefs {
 
     @Given("the user logged in as {string}")
     public void the_user_logged_in_as(String userType) {
-        //based on input enter that user information
-        String username =null;
-        String password =null;
+        UserUtils.UserGenerator(userType);
+        loginPage.login(UserUtils.username , UserUtils.password);
 
-        if(userType.equalsIgnoreCase("driver")){
-            username = ConfigurationReader.getProperty("driver_username");
-            password = ConfigurationReader.getProperty("driver_password");
-        }else if(userType.equalsIgnoreCase("sales manager")){
-            username = ConfigurationReader.getProperty("sales_manager_username");
-            password = ConfigurationReader.getProperty("sales_manager_password");
-        }else if(userType.equalsIgnoreCase("store manager")){
-            username = ConfigurationReader.getProperty("store_manager_username");
-            password = ConfigurationReader.getProperty("store_manager_password");
-        }
-        //send username and password and login
-        new LoginPage().login(username,password);
     }
 
     @Then("The user is on the {string} page")
