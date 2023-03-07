@@ -28,8 +28,6 @@ public class LoginStepDefs {
     }
 
 
-
-
     @When("the user logs in using {string} and {string}")
     public void the_user_logs_in_using_and(String username, String password) {
         loginPage.login(username,password);

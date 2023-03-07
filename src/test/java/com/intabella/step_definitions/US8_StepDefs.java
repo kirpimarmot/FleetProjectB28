@@ -15,14 +15,11 @@ public class US8_StepDefs {
     public void theUserClickOnCreateCalendarEventButton() {
         calendarEventsPage.waitUntilLoaderScreenDisappear();
         calendarEventsPage.createCalendarEventButton.click();
-
     }
 
     @Then("the repeat number is {string}")
     public void theRepeatNumberIs(String expectedRepeatNumber) {
-
         Assert.assertEquals(expectedRepeatNumber, calendarEventsPage.repeatEveryInputBox.getAttribute("value"));
-
 
     }
 
