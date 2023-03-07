@@ -1,4 +1,4 @@
-Feature: Calender Events Page- Write Description
+Feature: As a user, I want to write the “Description” when I create a calendar event. (Iframe)
 
   Background: User is already in the log in page
     Given the user is on the login page

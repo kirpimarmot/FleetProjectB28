@@ -1,4 +1,4 @@
-Feature: Pinbar
+Feature: As a user, I want to learn how to use the pinbar
 
   Background: User is already in the log in page
     Given the user is on the login page

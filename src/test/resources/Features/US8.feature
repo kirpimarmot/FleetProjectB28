@@ -1,4 +1,4 @@
-Feature: Calender Events Page- Create Recurring Events
+Feature: As a user, I want to create a recurring(repetitive) calendar event.
 
   Background: User is already in the log in page
     Given the user is on the login page

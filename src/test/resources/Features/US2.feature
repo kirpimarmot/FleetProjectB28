@@ -1,5 +1,5 @@
 
-Feature: Oroinc page
+Feature: As a user, I should be access to the Oroinc Documentation page. (Window handle)
 
   Background: User is already in the log in page
     Given the user is on the login page

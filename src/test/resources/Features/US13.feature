@@ -1,4 +1,4 @@
-Feature: Vehicle Cost Page
+Feature: As a user, I want to manage filters on the Vehicle Costs page. (Web table and checkbox)
 
   Background: User is already in the log in page
     Given the user is on the login page

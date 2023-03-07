@@ -1,4 +1,4 @@
-Feature: Select Vehicle from Vehicles Page
+Feature: As a user, I should be able to select any vehicle from the Vehicle page(web table)
 
   Background: User is already in the log in page
     Given the user is on the login page

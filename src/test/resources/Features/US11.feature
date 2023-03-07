@@ -1,4 +1,4 @@
-Feature: Vehicle Odometer Page
+Feature: As a user, I want to view car odometer info on the Vehicles Odometers page.
 
   Background: User is already in the log in page
     Given the user is on the login page

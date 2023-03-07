@@ -31,24 +31,6 @@ public class VehiclesPage extends BasePage{
 
 
 
-
-
-    public void hoverOverThreeDots(){
-        Actions actions = new Actions(Driver.getDriver());
-        //web element receives the mouse event in second attempt
-        //we try twice
-//        try {
-//            for (int i = 0; i < 2; i++) {
-                actions.moveToElement(threeDots).pause(100).build().perform();
-                BrowserUtils.waitFor(2);
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-
-
-    }
-
     public String getValueViewPerPage(){
         BrowserUtils.waitForVisibility(viewPerPage,5);
         return viewPerPage.getText();

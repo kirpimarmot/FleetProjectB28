@@ -1,4 +1,4 @@
-Feature: Customers Account Page
+Feature: As a user, I want to filter customers’ info on the Account page.
 
   Background: User is already in the log in page
     Given the user is on the login page

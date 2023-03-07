@@ -1,4 +1,4 @@
-Feature: Vehicle Model Page
+Feature: As a user, I want to view columns on the Vehicle models page.
 
   Background: User is already in the log in page
     Given the user is on the login page

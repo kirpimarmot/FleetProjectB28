@@ -1,4 +1,4 @@
-Feature: Vehicle Contract Page
+Feature: As a user, I want to access to Vehicle contracts page
 
   Background: User is already in the log in page
     Given the user is on the login page

@@ -1,4 +1,4 @@
-Feature: Manage Filters on Marketing Page
+Feature: As a user, I want to manage filters on the Marketing page.
 
   Background: User is already in the log in page
     Given the user is on the login page
