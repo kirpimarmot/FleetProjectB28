@@ -15,8 +15,11 @@ public class CalendarEventsPage extends BasePage{
     public WebElement repeatEveryInputBox;
 
 
-    @FindBy(xpath = "//span[contains(text(),'This value should not be blank.')]")
+    @FindBy(xpath = "//span[@class='validation-failed']//span[1]")
     public WebElement warningMessage;
+
+
+
 
 
 

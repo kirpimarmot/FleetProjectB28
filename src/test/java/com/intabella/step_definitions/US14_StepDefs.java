@@ -4,6 +4,7 @@ import com.intabella.pages.Filters;
 import com.intabella.utilities.BrowserUtils;
 import com.intabella.utilities.Driver;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;

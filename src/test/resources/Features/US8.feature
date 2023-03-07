@@ -17,5 +17,5 @@ Feature: Calender Events Page- Create Recurring Events
     When the user navigates to "Activities" - "Calendar Events"
     And the user click on Create Calendar Event button
     And the user click on repeat check box
-    When the calendar event repaet field is cleared
+    When the calendar event repeat field is cleared
     Then the user should see "This value should not be blank." warning

@@ -12,9 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class US3_StepDefs {
-
     DashboardPage dashboardPage = new DashboardPage();
-
 
     @And("the user click on the {string} link")
     public void theUserClickOnTheLink(String str) {
