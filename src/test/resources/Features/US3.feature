@@ -3,7 +3,7 @@ Feature: As a user, I want to learn how to use the pinbar
   Background: User is already in the log in page
     Given the user is on the login page
 
-
+  @smoke @INTA-1472 @INTA-1474
   Scenario: US3AC1TC1 Verify user can use how to use the pinbar
     Given the user logged in as "sales manager"
     And the user click on the "Learn how to use this space" link

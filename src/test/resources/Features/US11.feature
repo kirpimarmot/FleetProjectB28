@@ -7,12 +7,12 @@ Feature: As a user, I want to view car odometer info on the Vehicles Odometers p
   Scenario Outline:US11AC1TC1 Verify sales manager and store manager can not access Vehicle Odometer Page
     Given the user logged in as "<userType>"
     When the user navigates to "<tab>" - "<module>"
-    Then the user should see "<warning>" message
+    Then the user should see "You do not have permission to perform this action." message
 
     Examples:
-      | userType      | tab   | module           | warning                                            |
-      | sales manager | Fleet | Vehicle Odometer | You do not have permission to perform this action. |
-      | store manager | Fleet | Vehicle Odometer | You do not have permission to perform this action. |
+      | userType      | tab   | module           |
+      | sales manager | Fleet | Vehicle Odometer |
+      | store manager | Fleet | Vehicle Odometer |
 
 
 
