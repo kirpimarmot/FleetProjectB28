@@ -4,7 +4,7 @@ Feature: As a user, I should be accessing all the main modules of the app.
   Background: User is already in the log in page
     Given the user is on the login page
 
-@smoke @INTA-1470 @INTA-1474
+
   Scenario: US1AC1TC1 Verify Menu Options for Driver
     Given the user logged in as "driver"
     Then the user should see following options
