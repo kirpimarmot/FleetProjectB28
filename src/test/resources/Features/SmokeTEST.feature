@@ -4,7 +4,6 @@ Feature: Default
 	Background:
 		#@INTA-1422
 		Given the user is on the login page
-		
 
 
 	@INTA-1470 @INTA-1473
